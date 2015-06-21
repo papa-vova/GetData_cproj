@@ -29,7 +29,8 @@ This part of the script creates two variables:
 The script loads data from train and test directories:
 
 * signals proper — from ```X_*.txt``` files. ```colClasses = dcols``` is used in ```read.table``` so that only necessary fields are loaded. Data from the train subset is ```rbind```-ed with the data from the test subset, thus creating the single ```data``` set;
-* activity identifiers — from ```y_*.txt``` files.
+* activity identifiers (Activity vectors) — from ```y_*.txt``` files;
+* subjects (Subject vectors) — from ```subject_*.txt``` files.
 
 Activity labels are read from the ```activity_labels.txt``` in the root directory of the Dataset and merged with activity identifiers.
 
